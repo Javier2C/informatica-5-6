@@ -3,18 +3,20 @@ import random
 def main():
 
     attempt = input(print("choose, heads or tails")).strip().lower()
-    
+
     coin = random.randint(1, 2)
     print(coin)
 
 
     if coin == 1:
-        print("heads")
+        result = "heads"
 
-    elif coin == 2:
-        print("tails")
+    else:
+        result = "tails"
 
-    elif attempt == coin:
+    print(result)
+
+    if attempt == result:
         print("you win")
 
     else:
