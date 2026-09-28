@@ -1,11 +1,23 @@
 def main():
 
-    number = input("write a number from 1 to 10: ")
-    table = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    nums = []
+    for i in range(1,11):
+        nums.append(str(i))
 
-    while number == table:
-        for i in (table):
-            print(")
+    while True:
+        times_table = input("enter a number 1-10: ").lower().strip()
+        if times_table == "exit":
+            break
+
+        elif times_table in nums:
+            print(f"here is the {times_table} times table: ")
+            for x in range(1,11):
+                result = int(times_table) * x
+                print(f"{x} times {times_table} is {result}")
+
+        else:
+            print("invalid command")
+
 
 
 

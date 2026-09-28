@@ -1,0 +1,8 @@
+1. while:
+is a condition that makes the code repeat itself in a indefinite way until it the user put an option to break
+
+2. for loop:
+its a loop that works for making sequences in the code
+
+3. comparision:
+the for loop works for a sequence and a while loop works for a condition
