@@ -16,17 +16,25 @@ def main():
         except ValueError:
             print("ENTER A NUMBER. 🤬🤬🤬🤬🤬🤬🤬🤬")
 
-    while True:
-        try:
+    # while True:
+    #     try:
 
-            name = input("enter your name: ")
-            f_letter = name[0]
-            print("name stored successfully")
+    #         name = input("enter your name: ")
+    #         f_letter = name[0]
+    #         print("name stored successfully")
+    #         break
+
+    #     except IndexError:
+    #         print("please enter your name -_-")
+
+    name = 0
+    while name != "":
+        name = input("enter your name: ")
+        if name == "":
+            print("a name is required")
+        else:
+            print("named stored successfully")
             break
-
-        except IndexError:
-            print("please enter your name -_-")
-
 
 
 
