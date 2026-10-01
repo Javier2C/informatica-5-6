@@ -7,12 +7,16 @@ def main():
 
     if 1 <= times_table <= 10:
 
-        print(f"Here is the {times_table} times table")
+        print(f"Here is the quiz for {times_table} times table")
 
         for x in range(max_value):
                 answer = x * times_table
-                
-                print(f"you will be tested on your chosen times table")
+                print(f"how much is {times_table} * {x}:" )
+                user_answer = int(input("your answer: "))
+                print()
+
+
+
 
     else:
             print("Invalid command.")
