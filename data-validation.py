@@ -13,10 +13,19 @@ def main():
                 print("enter a number from 1-10!!!!!!")
 
 
-
         except ValueError:
             print("ENTER A NUMBER. 🤬🤬🤬🤬🤬🤬🤬🤬")
 
+    while True:
+        try:
+
+            name = input("enter your name: ")
+            f_letter = name[0]
+            print("name stored successfully")
+            break
+
+        except IndexError:
+            print("please enter your name -_-")
 
 
 
