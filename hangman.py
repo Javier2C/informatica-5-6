@@ -12,7 +12,6 @@
 # make an if function for when the user puts a correct answer
 # make an elif function for when the user puts a wrong answer
 # make an elif function for when the user puts  answer
-
 # make a input to ask the user for the letter
 
 
@@ -48,13 +47,22 @@
 
 
 
+import random
+
+def main():
+
+    start_game()
+
+def start_game():
+    with open("words.txt") as file:
+        content = file.read()
+        print(content)
+    for word in random("words.txt"):
+        print(word)
 
 
-# def main():
 
 
 
-
-
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
